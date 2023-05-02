@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ value1}}</title>
+</head>
+<body>
+    <div class="django">
+        <p><h1>{{ value2 }}</h1></p>
+        <p><h1>{{value3}}</h1></p>
+        {% if details %}
+
+        {% for detail in details %}
+        
+       <i><h3>{{ detail.id}}. User info</h3></i>
+                <ul>
+                        <li>{{ detail.firstName}}</li>
+                        <li>{{ detail.lastName}}</li>
+                        <li>{{ detail.eMail}}</li> 
+                </ul>
+
+        {% endfor %}
+        
+        {% endif %}
+    </div>
+
+
+
+</body>
+</html>
